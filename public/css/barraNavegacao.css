@@ -1,0 +1,49 @@
+.logo{
+    border-radius: 27px;
+    border: 1px solid black;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    box-shadow: 1px 1px 5px black;
+}
+
+nav ul{
+    display: flex;
+    gap: 20px;
+}
+
+.barra-nav-toggle{
+    display: none;
+    border: none;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.menu-mobile{
+    display: none;
+    flex-direction: column;
+    padding: 20px;
+    margin: 7px;
+    border: 1px solid black;
+    border-radius: 10px;
+    gap: 15px;
+    background-color: #eee;     
+}
+
+.display-flex-mobile{
+    display: flex;
+}
+
+@media (max-width: 900px){
+    .barra-nav-toggle{
+        display: block;
+    }
+
+    nav ul{
+        display: none;
+    }
+}
